@@ -56,7 +56,7 @@ void setup(){
   
   filter.begin(10);  // 10Hz  filter初始化
 
-  microsPerReading = 1000000 / 10;
+  microsPerReading = 1000000 / 1000;
   microsPrevious = micros();
 
 }
