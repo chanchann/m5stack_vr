@@ -6,6 +6,12 @@ https://docs.m5stack.com/#/zh_CN/arduino/arduino_home_page
 
 http://pages.switch-science.com/letsiot/rotateM5Stack/
 
+## 解决延迟和颤抖问题
+
+卡尔曼滤波
+
+rtimulib
+
 ## Introduction to VR
 
 VR设备分为
@@ -30,6 +36,9 @@ OpenVR为VR游戏提供统一的数据接口，从而使得VR游戏不用直接�
 
 OpenVR的API都是以C++接口类方式呈现的，而且都是纯虚函数。当应用程序初始化系统时，它会返回该应用程序所使用到的SDK头文件内相匹配的接口。
 
+可通过为使用OpenVR API为SteamVR编写一个驱动使HMD或手柄在SteamVR上正常使用。使用OpenVR开发的游戏程序都将会在硬件上正常运行，而不需要游戏开发者再另外做额外的工作。
+
+
 ## steamvr
 
 SteamVR是一个runtime，它是通过Steam安装在电脑上的，OpenVR是提供API的，通过SteamVR，不同的VR系统（Unity，UE等）调用OpenVR的API来开发应用程序，还可在OpenVR中添加驱动来对接VR硬件。
@@ -37,6 +46,7 @@ SteamVR是一个runtime，它是通过Steam安装在电脑上的，OpenVR是提�
 SteamVR平台主要是为Vive服务的，但是它也兼容了osvr, Rift和Touch的驱动。还有些人编写了Razer Hydra的驱动来匹配旧的雷蛇手柄。
 
 也就是说，SteamVR是依赖OpenVR的。
+
 
 ## openVR之十二大驱动接口
 
